@@ -6,7 +6,10 @@
 	<link rel="stylesheet" href="estilos.css">	
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="animate.css">
+	
 </head>
+
 <body>
 	<div class="container">
 		<div class="row">
@@ -15,44 +18,44 @@
 			<div id="disp">
 				<div class="display input-group input-group-lg">
   					<!-- <span class="input-group-addon" id="sizing-addon1">@</span> -->
-  					<input type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1" disabled>
+  					<input id="input" type="text" class="form-control" placeholder="" aria-describedby="sizing-addon1" disabled>
 				</div>
 				
 			</div>
 
 			<div class="numpad">
 				<div class="fila1">
-					<button><p>CE</p></button>
-					<button><p>C</p></button>
+					<button class="borrar"><p>CE</p></button>
+					<button class="borrar"><p>C</p></button>
 					<button class="glyphicon glyphicon-arrow-left"><p></p></button>
-					<button><p>/</p></button>
+					<button class="dividir"><p>/</p></button>
 				</div>
 
 				<div class="fila2">
-					<button><p id="seven">7</p></button>
-					<button><p>8</p></button>
-					<button><p>9</p></button>
-					<button><p>*</p></button>
+					<button class="numero"><p>7</p></button>
+					<button class="numero"><p>8</p></button>
+					<button class="numero"><p>9</p></button>
+					<button class="multiplicar"><p>*</p></button>
 				</div>
 
 				<div class="fila3">
-					<button><p>4</p></button>
-					<button><p>5</p></button>
-					<button><p>6</p></button>
-					<button><p>-</p></button>
+					<button class="numero"><p>4</p></button>
+					<button class="numero"><p>5</p></button>
+					<button class="numero"><p>6</p></button>
+					<button class="restar"><p>-</p></button>
 				</div>
 
 				<div class="fila4">
-					<button><p>1</p></button>
-					<button><p>2</p></button>
-					<button><p>3</p></button>
-					<button><p>+</p></button>
+					<button class="numero"><p>1</p></button>
+					<button class="numero"><p>2</p></button>
+					<button class="numero"><p>3</p></button>
+					<button class="sumar"><p>+</p></button>
 				</div>
 
 				<div class="fila5">
-					<button id="cero">0</button>
-					<button>.</button>
-					<button>=</button>
+					<button id="cero" class="numero"><p>0</p></button>
+					<button class="punto"><p>.</p></button>
+					<button class="igual"><p>=</p></button>
 					
 				</div>
 
@@ -62,18 +65,8 @@
 
 	</div>
 
-<!-- <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
-<script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script>
-	$(document).ready(function() {
-		$('#seven').click(function() {
-			$(this).css("width: 110px, height:110px");
-
-		});
-
-	});
-
-</script> -->
+<script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="calculadora.js"></script>
 	
 </body>
 </html>
